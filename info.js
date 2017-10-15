@@ -1,5 +1,5 @@
 
-'use strict'
+'use strict a'
 var chalk = require('chalk');
 var fs  = require('fs');
 var path= require('path');
@@ -11,7 +11,7 @@ console.log(chalk.blue.bold('Hyperledger Composer Sample applications available 
 let apps = fs.readdirSync('./packages/');
 apps.forEach(function(entry) {
 	var possiblePackage = path.resolve('./packages/',entry,'package.json');
-	
+
 	if (fs.existsSync(possiblePackage)){
 	    var packagejson = require(possiblePackage);
 
